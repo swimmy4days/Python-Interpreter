@@ -18,11 +18,46 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exceptions\IndentationException.cpp" />
+    <ClCompile Include="exceptions\InterperterException.cpp" />
+    <ClCompile Include="exceptions\NameErrorException.cpp" />
+    <ClCompile Include="exceptions\SyntaxException.cpp" />
+    <ClCompile Include="exceptions\TypeException.cpp" />
+    <ClCompile Include="src\Helper.cpp" />
+    <ClCompile Include="src\interpreter.cpp" />
+    <ClCompile Include="src\parser.cpp" />
+    <ClCompile Include="types\Boolean.cpp" />
+    <ClCompile Include="types\Command.cpp" />
+    <ClCompile Include="types\Integer.cpp" />
+    <ClCompile Include="types\List.cpp" />
+    <ClCompile Include="types\myString.cpp" />
+    <ClCompile Include="types\Sequence.cpp" />
+    <ClCompile Include="types\Type.cpp" />
+    <ClCompile Include="types\Void.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exceptions\IndentationException.h" />
+    <ClInclude Include="exceptions\InterperterException.h" />
+    <ClInclude Include="exceptions\NameErrorException.h" />
+    <ClInclude Include="exceptions\SyntaxException.h" />
+    <ClInclude Include="exceptions\TypeException.h" />
+    <ClInclude Include="src\Helper.h" />
+    <ClInclude Include="src\parser.h" />
+    <ClInclude Include="types\Boolean.h" />
+    <ClInclude Include="types\Command.h" />
+    <ClInclude Include="types\Integer.h" />
+    <ClInclude Include="types\List.h" />
+    <ClInclude Include="types\myString.h" />
+    <ClInclude Include="types\Sequence.h" />
+    <ClInclude Include="types\type.h" />
+    <ClInclude Include="types\Void.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{8C9537B3-FF17-4839-8123-33838CDF40D0}</ProjectGuid>
     <RootNamespace>PythonInterpreter</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -87,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)exceptions;$(ProjectDir)types;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -99,6 +135,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)exceptions;$(ProjectDir)types;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,6 +150,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)exceptions;$(ProjectDir)types;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +167,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)exceptions;$(ProjectDir)types;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,41 +176,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Boolean.cpp" />
-    <ClCompile Include="Command.cpp" />
-    <ClCompile Include="Helper.cpp" />
-    <ClCompile Include="IndentationException.cpp" />
-    <ClCompile Include="Integer.cpp" />
-    <ClCompile Include="InterperterException.cpp" />
-    <ClCompile Include="interpreter.cpp" />
-    <ClCompile Include="List.cpp" />
-    <ClCompile Include="NameErrorException.cpp" />
-    <ClCompile Include="parser.cpp" />
-    <ClCompile Include="Sequence.cpp" />
-    <ClCompile Include="String.cpp" />
-    <ClCompile Include="SyntaxException.cpp" />
-    <ClCompile Include="Type.cpp" />
-    <ClCompile Include="TypeException.cpp" />
-    <ClCompile Include="Void.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Boolean.h" />
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="Helper.h" />
-    <ClInclude Include="IndentationException.h" />
-    <ClInclude Include="Integer.h" />
-    <ClInclude Include="InterperterException.h" />
-    <ClInclude Include="List.h" />
-    <ClInclude Include="NameErrorException.h" />
-    <ClInclude Include="parser.h" />
-    <ClInclude Include="Sequence.h" />
-    <ClInclude Include="String.h" />
-    <ClInclude Include="SyntaxException.h" />
-    <ClInclude Include="type.h" />
-    <ClInclude Include="TypeException.h" />
-    <ClInclude Include="Void.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

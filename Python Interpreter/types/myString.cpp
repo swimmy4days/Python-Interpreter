@@ -1,4 +1,4 @@
-#include "String.h"
+#include "myString.h"
 
 String::String(string data) : Sequence('s')
 {

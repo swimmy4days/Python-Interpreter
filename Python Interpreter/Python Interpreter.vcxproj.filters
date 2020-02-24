@@ -15,99 +15,99 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IndentationException.cpp">
+    <ClCompile Include="exceptions\NameErrorException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="interpreter.cpp">
+    <ClCompile Include="exceptions\SyntaxException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="parser.cpp">
+    <ClCompile Include="exceptions\TypeException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Type.cpp">
+    <ClCompile Include="exceptions\IndentationException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Helper.cpp">
+    <ClCompile Include="exceptions\InterperterException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Integer.cpp">
+    <ClCompile Include="src\interpreter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sequence.cpp">
+    <ClCompile Include="src\parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="String.cpp">
+    <ClCompile Include="src\Helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SyntaxException.cpp">
+    <ClCompile Include="types\Type.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Void.cpp">
+    <ClCompile Include="types\Void.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Boolean.cpp">
+    <ClCompile Include="types\Boolean.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InterperterException.cpp">
+    <ClCompile Include="types\Command.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NameErrorException.cpp">
+    <ClCompile Include="types\Integer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="List.cpp">
+    <ClCompile Include="types\List.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TypeException.cpp">
+    <ClCompile Include="types\Sequence.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Command.cpp">
+    <ClCompile Include="types\myString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Helper.h">
+    <ClInclude Include="exceptions\NameErrorException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IndentationException.h">
+    <ClInclude Include="exceptions\SyntaxException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InterperterException.h">
+    <ClInclude Include="exceptions\TypeException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="parser.h">
+    <ClInclude Include="exceptions\IndentationException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="type.h">
+    <ClInclude Include="exceptions\InterperterException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Boolean.h">
+    <ClInclude Include="src\parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Integer.h">
+    <ClInclude Include="src\Helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sequence.h">
+    <ClInclude Include="types\type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="String.h">
+    <ClInclude Include="types\Void.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SyntaxException.h">
+    <ClInclude Include="types\Boolean.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Void.h">
+    <ClInclude Include="types\Command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NameErrorException.h">
+    <ClInclude Include="types\Integer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="List.h">
+    <ClInclude Include="types\List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TypeException.h">
+    <ClInclude Include="types\Sequence.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Command.h">
+    <ClInclude Include="types\myString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

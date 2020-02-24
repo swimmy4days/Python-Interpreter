@@ -7,7 +7,7 @@
 #include <string>
 #include <sstream>
 #include <iostream>
-#include "String.h"
+#include "myString.h"
 #include "Helper.h"
 #include "Command.h"
 #include "Boolean.h"
